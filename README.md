@@ -6,4 +6,4 @@
 ### Few Components:
 - [x] Drawer
 - [x] FileUpload
-- [ ] Pagination
+- [x] Pagination
