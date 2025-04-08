@@ -20,12 +20,12 @@ document.querySelector('#app').innerHTML = `
         </div>
 
         <div class="gridGalleryCard">
-            <img src="https://placehold.co/600x400" alt="placeholder">
+            <img src="/Image3.png" alt="placeholder">
             <div class="gridGalleryCardContent">
                 <h3 class="gridGalleryCardContentH3">Pagination</h3>
                 <p class="gridGalleryCardContentP">
                     Pagination is the process of splitting information over multiple pages instead of showing it all on a single page; 
-                    also the name for the interface component used for navigating between these pages.
+                    the name for the interface component used for navigating between these pages.
                 </p>
                 <a href="/src/components/Pagination/index.html" class="gridGalleryCardContentLink" target="_blank">Card Two</a>
             </div>

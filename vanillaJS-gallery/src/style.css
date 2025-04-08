@@ -54,6 +54,7 @@ html {
 .gridGalleryCardContent {
   padding: 16px;
   border-radius: 10px;
+  height: 170px;
 }
 
 .gridGalleryCardContentH3 {
@@ -64,7 +65,7 @@ html {
 .gridGalleryCardContentP {
   color: #666;
   font-size: 1rem;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 .gridGalleryCardContentLink {
