@@ -24,10 +24,10 @@ document.querySelector('#app').innerHTML = `
             <div class="gridGalleryCardContent">
                 <h3 class="gridGalleryCardContentH3">Pagination</h3>
                 <p class="gridGalleryCardContentP">
-                    A Drawer is a sliding panel that overlays the page, providing quick access to information or 
-                    actions without leaving the current context.
+                    Pagination is the process of splitting information over multiple pages instead of showing it all on a single page; 
+                    also the name for the interface component used for navigating between these pages.
                 </p>
-                <a href="./components/Drawer/index.html" class="gridGalleryCardContentLink" target="_blank">Card Two</a>
+                <a href="/src/components/Pagination/index.html" class="gridGalleryCardContentLink" target="_blank">Card Two</a>
             </div>
         </div>
 
@@ -42,6 +42,7 @@ document.querySelector('#app').innerHTML = `
                 <a href="./components/Drawer/index.html" class="gridGalleryCardContentLink" target="_blank">Card Three</a>
             </div>
         </div>
+        
         <div class="gridGalleryCard">
             <img src="/image2.png" alt="placeholder">
             <div class="gridGalleryCardContent">
