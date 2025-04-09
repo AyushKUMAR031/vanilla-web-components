@@ -34,12 +34,12 @@ document.querySelector('#app').innerHTML = `
         <div class="gridGalleryCard">
             <img src="https://placehold.co/600x400" alt="placeholder">
             <div class="gridGalleryCardContent">
-                <h3 class="gridGalleryCardContentH3">Avatar</h3>
+                <h3 class="gridGalleryCardContentH3">Modal</h3>
                 <p class="gridGalleryCardContentP">
-                    A Drawer is a sliding panel that overlays the page, providing quick access to information or 
-                    actions without leaving the current context.
+                    A modal is a pop-up dialog box that appears on top of the main content. 
+                    It's often used for alerts, confirmations, or displaying forms.
                 </p>
-                <a href="./components/Drawer/index.html" class="gridGalleryCardContentLink" target="_blank">Card Three</a>
+                <a href="/src/components/Modal/index.html" class="gridGalleryCardContentLink" target="_blank">Card Three</a>
             </div>
         </div>
         

@@ -7,3 +7,4 @@
 - [x] Drawer
 - [x] FileUpload
 - [x] Pagination
+- [x] Modal

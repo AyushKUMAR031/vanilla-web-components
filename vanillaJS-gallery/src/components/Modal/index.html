@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pop Modal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #5e5959;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .btnmodal {
+      background-color: #c49978;
+      box-shadow: 0 4px 8px rgba(7, 10, 10, 2);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .btnmodal:hover {
+      background-color: #a67c63;
+      transform: scale(1.1);
+    }
+
+    /* Modal Overlay */
+    .modal {
+        display: none; /* hidden by default */
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #5e5959;
+        backdrop-filter: blur(3px);
+    }
+
+    /* Modal Box */
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(to right, #bbb0ad, #c49978);
+        color: #222;
+        padding: 2rem;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 26px;
+      color: #333;
+      background-color: aliceblue;
+      padding: 5px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .close:hover {
+      color: #ff4d4d;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <button id="openModalBtn" class="btnmodal">Open Modal</button>
+
+  <!-- Modal Structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <p>This is a modal window!</p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const openBtn = document.getElementById("openModalBtn");
+    const closeBtn = document.getElementById("closeModalBtn");
+
+    openBtn.onclick = () => modal.style.display = "block";
+    closeBtn.onclick = () => modal.style.display = "none";
+
+    window.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
